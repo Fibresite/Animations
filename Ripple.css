@@ -1,0 +1,37 @@
+﻿/* Animation | Material Design Ripple Click Effect */
+/* <element class="ripple"></element> */
+
+.ripple {
+    display: block;
+    float: left;
+    width: 49.6%;
+    margin: 0.2%;
+    height: 10em;
+    line-height: 10em;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    z-index: 0;
+}
+
+.ink {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    transform: scale(0);
+}
+
+.animate {
+    animation: ripple 0.65s linear;
+}
+
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
