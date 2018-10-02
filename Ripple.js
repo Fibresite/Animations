@@ -13,7 +13,7 @@
                 inkElement.classList.remove('ripple-effect');
     
             } else {
-                inkElement = document.createElement('span');
+                inkElement = document.createElement('div');
                 inkElement.classList.add('ripple-overlay');
                 inkElement.style.width = inkElement.style.height = Math.max(targetElement.offsetWidth, targetElement.offsetHeight) + 'px';
                 targetElement.appendChild(inkElement);
