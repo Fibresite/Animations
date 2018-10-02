@@ -1,7 +1,7 @@
 ﻿/* Animation | Material Design Ripple Click Effect */
 /* <element class="ripple"></element> */
 
-.ink {
+.ripple-overlay {
     display: block;
     position: absolute;
     background: rgba(255, 255, 255, 0.3);
@@ -9,7 +9,7 @@
     transform: scale(0);
 }
 
-.animate {
+.ripple-effect {
     animation: ripple 0.65s linear;
 }
 
