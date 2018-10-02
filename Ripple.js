@@ -1,26 +1,30 @@
-﻿var links = document.querySelectorAll('.ripple');
+﻿document.addEventListener("DOMContentLoaded", function(event) {
 
-for (var i = 0, len = links.length; i < len; i++) {
+    var links = document.querySelectorAll('.ripple');
+    
+    for (var i = 0, len = links.length; i < len; i++) {
+    
+        links[i].addEventListener('click', function(e) {
+    
+            var targetElement = e.target;
+            var inkElement = targetElement.querySelector('.ink');
+    
+            if (inkElement) {
+                inkElement.classList.remove('animate');
+    
+            } else {
+                inkElement = document.createElement('span');
+                inkElement.classList.add('ink');
+                inkElement.style.width = inkElement.style.height = Math.max(targetElement.offsetWidth, targetElement.offsetHeight) + 'px';
+                targetElement.appendChild(inkElement);
+            }
+    
+            inkElement.style.left = (e.offsetX - inkElement.offsetWidth / 2) + 'px';
+            inkElement.style.top = (e.offsetY - inkElement.offsetHeight / 2) + 'px';
+            inkElement.classList.add('animate');
+    
+        }, false);
+    
+    }
 
-    links[i].addEventListener('click', function(e) {
-
-        var targetEl = e.target;
-        var inkEl = targetEl.querySelector('.ink');
-
-        if (inkEl) {
-            inkEl.classList.remove('animate');
-
-        } else {
-            inkEl = document.createElement('span');
-            inkEl.classList.add('ink');
-            inkEl.style.width = inkEl.style.height = Math.max(targetEl.offsetWidth, targetEl.offsetHeight) + 'px';
-            targetEl.appendChild(inkEl);
-        }
-
-        inkEl.style.left = (e.offsetX - inkEl.offsetWidth / 2) + 'px';
-        inkEl.style.top = (e.offsetY - inkEl.offsetHeight / 2) + 'px';
-        inkEl.classList.add('animate');
-
-    }, false);
-
-}
+});
