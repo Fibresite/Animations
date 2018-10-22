@@ -1,0 +1,83 @@
+﻿/* Fade into Existance Animation */
+/* -webkit-animation: fadeIn 1000ms ease-in */
+/* -moz-animation: fadeIn 1000ms ease-in */
+/* -ms-animation: fadeIn 1000ms ease-in */
+/* -o-animation: fadeIn 1000ms ease-in */
+/* animation: fadeIn 1000ms ease-in */
+
+@-webkit-keyframes fadeIn {
+
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+@-moz-keyframes fadeIn {
+
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+@-ms-keyframes fadeIn {
+
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+@-o-keyframes fadeIn {
+
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+@keyframes fadeIn {
+
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+/* Fade from Existance Animation */
+/* -webkit-animation: fadeOut 1000ms ease-in */
+/* -moz-animation: fadeOut 1000ms ease-in */
+/* -ms-animation: fadeOut 1000ms ease-in */
+/* -o-animation: fadeOut 1000ms ease-in */
+/* animation: fadeOut 1000ms ease-in */
+
+@-webkit-keyframes fadeOut {
+
+    from { opacity: 1; }
+    to   { opacity: 0; }
+
+}
+
+@-moz-keyframes fadeOut {
+
+    from { opacity: 1; }
+    to   { opacity: 0; }
+
+}
+
+@-ms-keyframes fadeOut {
+
+    from { opacity: 1; }
+    to   { opacity: 0; }
+
+}
+
+@-o-keyframes fadeOut {
+
+    from { opacity: 1; }
+    to   { opacity: 0; }
+
+}
+
+@keyframes fadeOut {
+
+    from { opacity: 1; }
+    to   { opacity: 0; }
+
+}
